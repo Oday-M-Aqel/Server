@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takatof Products Page</title>
+    <!-- Favicon -->
+    <link href="../upload/image/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style-product.css" rel="stylesheet">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/product.css">
+
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="homepage" class="navbar-brand ms-4 ms-lg-0">
+                <img src="../upload/image/logo.png" alt="Takatof Logo" class="img-fluid" style="max-height: 50px;">
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-space-between" id="navbarCollapse">
+                <div class="navbar-nav p-4 p-lg-0">
+                    <a href="homepage" class="nav-item nav-link active">Home</a>
+                    <a href="product" class="nav-item nav-link">Products</a>
+                    <a href="details" class="nav-item nav-link">About Us</a>
+                    <a href="Consultation" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <div class="d-lg-flex ms-auto">
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="cart" title="Cart Page"><i
+                            class="bi bi-cart-fill text-body" style="font-size:20px;">
+                            <span id="cart-counter">0</span></i>
+
+                    </a>
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="add-product" title="add-product">
+                        <small class="fa fa-plus text-body"></small>
+                        <!-- <a class="btn-sm-square bg-white rounded-circle ms-3" title="Requests">
+                            <img src="../upload/image/Requests.png" alt="Requests" class="img-fluid" style="max-height: 20px;">
+                        </a> -->
+                        <a class="btn-sm-square bg-white rounded-circle ms-3" href="login"
+                            title="Account Settings">
+                            <small class="fa fa-user text-body"></small>
+                        </a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Main Classification Image -->
+    <section class="classification-image" style="position: relative; text-align: center;">
+        <img id="main-classification-image" src="../upload/image/carousel-1.jpg" alt="Main Classification Image">
+        <div id="category-label"
+            style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(255, 255, 255, 0.7); padding: 10px 20px; border-radius: 10px; font-size: 24px; font-weight: bold;">
+        </div>
+    </section>
+
+    <!-- Circular Classifications -->
+    <section class="classifications-wrapper">
+        <div class="classifications justify-content-sm-around align-items-center" id="categories-container">
+            <!-- <div class=" circle" onclick="changeClassificationImage('../upload/image/Furniture.jpg', 'Furniture')">
+                <div class="circle-cover">
+                    <img src="../upload/image/Furniture.jpg" alt="Furniture">
+                </div>
+                <p>Furniture</p>
+            </div>
+            <div class="circle" onclick="changeClassificationImage('../upload/image/product-2.jpg', 'Electronics')">
+                <div class="circle-cover">
+                    <img src="../upload/image/product-2.jpg" alt="electronic">
+                </div>
+                <p>Electronics</p>
+            </div>
+            <div class="circle"
+                onclick="changeClassificationImage('../upload/image/Industrial Equipment.png', 'Industrial equipment')">
+                <div class="circle-cover">
+                    <img src="../upload/image/Industrial Equipment.png" alt="Industrial equipment">
+                </div>
+                <p>Industrial equipment</p>
+            </div>
+            <div class="circle"
+                onclick="changeClassificationImage('../upload/image/Video games and accessories.jpg', 'Video games and accessories')">
+                <div class="circle-cover">
+                    <img src="../upload/image/Video games and accessories.jpg" alt="Video games and accessories">
+                </div>
+                <p>games and accessories</p>
+            </div>
+            <div class="circle" onclick="changeClassificationImage('../upload/image/product-11.jpg', 'Sports and Fitness')">
+                <div class="circle-cover">
+                    <img src="../upload/image/product-11.jpg" alt="Sports and Fitness">
+                </div>
+                <p>Sports and Fitness</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Layout and Sorting Options -->
+    <section class="layout-sorting">
+        <div class="layout-options">
+            <div class="layout-square rotate-90" onclick="changeLayout(1)">
+                <div class="bar"></div>
+            </div>
+            <!-- <div class="layout-square rotate-90" onclick="changeLayout(2)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="layout-square rotate-90" onclick="changeLayout(3)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div> -->
+            <div class="layout-square rotate-90" onclick="changeLayout(2)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        </div>
+        <div class="sort-options">
+            <select id="filter" onchange="filterProducts()">
+                <option value="product">All Products</option>
+                <option value="single">Single Products</option>
+                <option value="group">Group Products</option>
+            </select>
+            <select id="sort" onchange="sortProducts()">
+                <option value="default">Default Sorting</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <!-- Category Sidebar -->
+        <aside class="category-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <!-- <li>Furniture <span>(5)</span></li>
+                <li>Electronics <span>(8)</span></li>
+                <li>Industrial Equipment <span>(3)</span></li>
+                <li> Games and Accessories <span>(7)</span></li>
+                <li>Sports and Fitness <span>(4)</span></li> -->
+            </ul>
+        </aside>
+
+        <!-- Products Display -->
+        <section class="products-grid" id="products-container">
+            <div id="pageLoadingSpinner"
+                class="loading-overlay w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
+            </div>
+            <!-- Example Products -->
+            <!-- <div class="product-card product-card-right">
+                
+                <img src="../upload/image/product-1.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Laptop</h2>
+                    <div class="product-info">
+                        <span class="product-price">$950</span>
+                        <span class="product-category">
+                            
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-2.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">refrigerator</h2>
+                    <div class="product-info">
+                        <span class="product-price">$420</span>
+                        <span class="product-category">Electronics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-3.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Printer</h2>
+                    <div class="product-info">
+                        <span class="product-price">$130</span>
+                        <span class="product-category">Electronics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-4.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">vacuum cleaner</h2>
+                    <div class="product-info">
+                        <span class="product-price">$87</span>
+                        <span class="product-category">Electronics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-5.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Camera</h2>
+                    <div class="product-info">
+                        <span class="product-price">$1200</span>
+                        <span class="product-category">Electronics</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-6.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Playstation</h2>
+                    <div class="product-info">
+                        <span class="product-price">$1100</span>
+                        <span class="product-category"> games and accessories</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-7.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Table and chair</h2>
+                    <div class="product-info">
+                        <span class="product-price">$740</span>
+                        <span class="product-category">Furniture</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-8.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Vr</h2>
+                    <div class="product-info">
+                        <span class="product-price">$30</span>
+                        <span class="product-category">games and accessories</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-9.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Drill</h2>
+                    <div class="product-info">
+                        <span class="product-price">$50</span>
+                        <span class="product-category">Industrial equipment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-10.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Drill cleaner</h2>
+                    <div class="product-info">
+                        <span class="product-price">$65</span>
+                        <span class="product-category">Industrial equipment</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-11.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">weights(10k)</h2>
+                    <div class="product-info">
+                        <span class="product-price">$10</span>
+                        <span class="product-category">Sports and Fitness</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card product-card-right">
+                <img src="../upload/image/product-12.jpg" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-name">Walking machine(10k)</h2>
+                    <div class="product-info">
+                        <span class="product-price">$220</span>
+                        <span class="product-category">Sports and Fitness</span>
+                    </div>
+                </div>
+            </div> -->
+
+
+
+
+        </section>
+
+        <!-- Modal -->
+        <div class="modal fade productModal" id="productModal" tabhomepage="-1" aria-labelledby="productModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productDetails">Product Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left Part: Image/Carousel -->
+                            <div class="col-md-6">
+                                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <!-- Add your carousel items here -->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#productCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#productCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Right Part: Product Info -->
+                            <div class="col-md-6">
+                                <h3 id="productName">Product Name</h3>
+                                <p id="productDescription">Description goes here.</p>
+                                <p>Price: <span id="productPrice"></span></p>
+                                <p>Quantity: <span id="productQuantity"></span></p>
+                                <button id="addToCartBtn" class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/product-categories.js"></script>
+    <script src="../js/product-products.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+
+</html>
